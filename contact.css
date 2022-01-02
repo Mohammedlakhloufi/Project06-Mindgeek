@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1,h2,h3, li a{
+    font-family: 'Candal', sans-serif;
+  } 
+
+                         /****** Desktop design first******/
+
+                                   /***header***/
+header{
+    width: 80%;
+    margin: auto; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0px;
+}
+nav ul li{
+    text-align: center;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a i{
+    color: #FB8A9B;
+}
+nav ul li a span{
+    color:#1F3F4E;
+}
+nav ul li:hover i{
+    color:#1F3F4E;
+}
+nav ul li:hover a span{
+    color:#FB8A9B;
+}
+                                    /***main***/
+main{
+    width: 80%;
+    margin: auto;
+}
+/* search bar */
+form input[type=search]{
+    background-color: #FB8A9B;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 10px 0px 10px 40px;
+}
+input::placeholder{
+    color: white;
+    font-size: 1.2rem;
+}
+/* contact section  */
+h2{
+    text-align: center; 
+    border: 1px dotted #1F3F4E;
+    border-bottom: none;
+    padding: 10px;
+    font-size: 1.8rem;
+    color:#1F3F4E;
+}
+.Contact{
+    display: flex;
+    justify-content:space-around;
+}
+.ContactType{
+   width: 30%;
+   text-align: center;
+}
+.Contact .ContactType i,span{
+    color:  #FB8A9B;
+}
+.Contact .ContactType i{
+    margin-bottom: 5px ;
+} 
+.Contact .ContactType p{
+    border-top: 2px dotted #FB8A9B;
+    padding-top: 15px;
+}
+/* MindGeek location map */
+.location iframe{
+    width: 100%;
+}
+
+                                        /*** footer ***/
+footer{
+    width: 80%;
+    text-align: center;
+    background-color: #1F3F4E;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0px;
+}
+footer ul li a{
+    color: white;
+    font-size: 0.7rem;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    margin: 5px auto 5px auto;
+}
+footer p {
+    font-size: 0.6rem;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    color: #FB8A9B;
+}
+                                         /***** Tablet design specifity*****/
+@media screen and (max-width: 768px){
+    nav ul ,footer ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li, footer ul li{
+        margin-bottom: 15px;
+    }
+    section .Contact{
+        display: flex;
+        flex-direction: column;
+    }
+    section .Contact .ContactType{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} 
